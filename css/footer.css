@@ -77,11 +77,13 @@
 .wrapper-content {
   display: flex;
 }
+
 .wrapper-link {
   display: flex;
   margin-left: 11.115%;
   flex-grow: 1;
 }
+
 .link-title {
   font-size: 1.25rem;
   margin-bottom: 21px;
@@ -112,8 +114,8 @@
 .lowest-footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .lowest-footer-left {
@@ -133,7 +135,7 @@
   line-height: 15px;
   letter-spacing: 0em;
   max-width: 301px;
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 .footer-rights {
