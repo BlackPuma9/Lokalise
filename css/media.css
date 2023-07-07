@@ -1,5 +1,11 @@
 /* 320 - 768 - 1100 - 1900 --> Sizes of the screen */
 
+@media (max-width: 1350px) {
+  .benefits-container-child {
+    margin-left: 25px;
+  }
+}
+
 @media (max-width: 1250px) {
   .item-section {
     flex-direction: column;
