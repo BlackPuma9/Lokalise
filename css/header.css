@@ -43,6 +43,10 @@ nav div ul a li {
   display: none;
 }
 
+.fa {
+  color: #000000;
+}
+
 .nav-btn {
   width: 120px;
   text-decoration: none;
