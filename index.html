@@ -9,26 +9,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="container">
       <nav class="navigation bar">
         <div class="navigation">
-          <a href="#"
+          <a href="#" class="company-logo"
             ><img src="./img/nav-logo.svg" alt="Company logo Lokalise"
           /></a>
-          <ul>
-            <a href="#"><li>Product</li></a>
-            <a href="#"><li>Features</li></a>
-            <a href="#"><li>Pricing</li></a>
-            <a href="#"><li>Case studies</li></a>
-            <a href="#"><li>Resources</li></a>
-          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+            <i class="fa fa-bars"> Menu</i>
+          </a>
+          <div class="myLinks-wrapper">
+            <ul id="myLinks">
+              <a href="#"><li>Product</li></a>
+              <a href="#"><li>Features</li></a>
+              <a href="#"><li>Pricing</li></a>
+              <a href="#"><li>Case studies</li></a>
+              <a href="#"><li>Resources</li></a>
+            </ul>
+          </div>
         </div>
-        <div class="navigation">
+        <div class="navigation-buttons">
           <a href="#" class="nav-btn">Log in</a>
           <a href="#" class="nav-btn try">Try it free</a>
         </div>
@@ -47,8 +57,11 @@
               teams. Embrace automation, workflow transparency, and fast project
               delivery.
             </p>
-            <a href="#" class="homepage-btn try">Try it free</a>
-            <a href="#" class="homepage-btn">Book a demo</a>
+            <div class="homepage-btn-wrapper">
+              <a href="#" class="homepage-btn try">Try it free</a>
+              <a href="#" class="homepage-btn">Book a demo</a>
+            </div>
+
             <p class="homepage-wrapper-desctrial">
               Try all features for 14 days · No credit card required
             </p>
@@ -156,13 +169,9 @@
               <h2 class="benefit-wrapper-title">Less work for developers</h2>
               <p class="benefit-wrapper-descript">
                 Eliminate the hassle of localization and let developers get back
-                to their main tasks. Save hours with the powerful
-                <span class="underline">API</span>,
-                <span class="underline">CLI</span>,
-                <span class="underline">mobile SDKs</span>, and integrations
-                with <span class="underline">GitHub</span>,
-                <span class="underline">Bitbucket</span>,
-                <span class="underline">JIRA</span>, and more.
+                to their main tasks. Save hours with the powerful API, CLI,
+                mobile SDKs, and integrationswith GitHub, Bitbucket, JIRA, and
+                more.
               </p>
               <a href="#" class="start-now-link"><p>Start now</p></a>
             </div>
@@ -471,5 +480,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function menuFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>

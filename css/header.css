@@ -3,6 +3,13 @@
   flex-direction: row;
   align-items: center;
 }
+
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navigation.bar {
   justify-content: space-between;
   box-sizing: border-box;
@@ -26,6 +33,14 @@ nav div ul a {
 
 nav div ul a li {
   display: inline-block;
+}
+
+#myLinks {
+  display: inline-block;
+}
+
+.icon {
+  display: none;
 }
 
 .nav-btn {
